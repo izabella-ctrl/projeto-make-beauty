@@ -1,0 +1,382 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+  }
+  
+  header {
+    background-color: #f080a5;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .logo-svg {
+    flex-shrink: 0;
+  }
+  
+  .lipstick-body {
+    fill: #f080a5;
+    stroke: #d81b60;
+    stroke-width: 1.5;
+    rx: 4;
+    ry: 4;
+  }
+  
+  .lipstick-tip {
+    fill: #d81b60;
+    stroke: #a31848;
+    stroke-width: 1;
+  }
+  
+  .header-text {
+    text-align: center;
+  }
+  
+  .header-text h1 {
+    margin: 0;
+  }
+  
+  .header-text p {
+    margin: 0;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+  }
+  
+  nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  h2 {
+    color: #f080a5;
+  }
+  .produtos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
+  .produto {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease;
+  }
+
+  .produto:hover {
+    transform: translateY(-5px);
+  }
+
+  .produto img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .produto-info {
+    padding: 15px;
+    text-align: center;
+  }
+
+  .produto-info h3 {
+    color: #f080a5;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+  }
+
+  .produto-info p {
+    color: #333;
+    font-weight: bold;
+  }
+  .produto-info button {
+    background-color: #f080a5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+
+  .produto-info button:hover {
+    background-color: #d86c91;
+  }
+
+  @media (max-width: 768px) {
+    .produto {
+      width: 45%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .produto {
+      width: 100%;
+    }
+  }
+  
+  /* SERVIÇOS */
+  .services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .service-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease;
+  }
+  
+  .service-card i {
+    font-size: 40px;
+    color: #f080a5;
+    margin-bottom: 10px;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* CONTATO */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: inherit;
+  }
+  
+  .contact-form button {
+    background-color: #f080a5;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  .contact-form button:hover {
+    background-color: #d81b60;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .social-links a {
+    font-size: 28px;
+    color: #f080a5;
+    transition: color 0.3s;
+  }
+  
+  .social-links a:hover {
+    color: #d81b60;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+  }
+#logo{
+  position: static;
+  top: 50px;
+  left: 30px;
+  border: 4px solid ;
+  padding: 20px;
+}
+
+#recomendacao {
+  border: 2px solid #f2b6c6;
+  border-radius: 12px;
+  padding: 25px;
+  margin: 40px auto;
+  max-width: 600px;
+  background-color: #fff;
+}
+
+#recomendacao h2 {
+  color: #d81b60;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* FORM */
+#formMake {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#formMake label {
+  font-weight: 500;
+  color: #444;
+}
+
+/* SELECT */
+#formMake select {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* BOTÃO */
+#formMake button {
+  background-color: #d81b60;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#formMake button:hover {
+  background-color: #c2185b;
+}
+
+/* RESULTADO */
+#resultado-make {
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 15px;
+  background-color: #fdf1f5;
+}
+
+#mensagem-carrinho {
+  margin: 15px 0;
+  color: #d81b60;
+  font-weight: bold;
+}
+
+#btn-carrinho {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #e91e63;
+  color: white;
+  border: none;
+  padding: 12px 15px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+#carrinho-lateral {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: 100%;
+  background: #fff;
+  box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+  padding: 20px;
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+
+#carrinho-lateral.aberto {
+  right: 0;
+}
+
+#lista-carrinho {
+  list-style: none;
+  padding: 0;
+}
+
+#lista-carrinho li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+#total-carrinho {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+#limpar-carrinho {
+  margin-top: 10px;
+  width: 100%;
+  padding: 8px;
+  background: #e91e63;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.remover {
+  margin-left: 8px;
+  color: red;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#mensagem-add {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  background: #e91e63;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 6px;
+  display: none;
+  font-weight: bold;
+  z-index: 2000;
+}
+

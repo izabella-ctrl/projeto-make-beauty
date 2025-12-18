@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Make & Beauty</title>
+
+  <!-- Ícones Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Link para o CSS externo -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+      
+  <header>
+       <img src="imagem/Gemini_Generated_Image_yc7p3jyc7p3jyc7p.png" alt="logo" height="1000" width="1200">
+    <div class="header-text">
+      <h1>Make & Beauty</h1>
+      <p>A beleza sempre pode realçar cada vez mais</p>
+    </div>
+  </header>
+
+ <button id="btn-carrinho">🛒</button>
+
+<div id="carrinho-lateral">
+  <h3>Meu Carrinho</h3>
+
+  <ul id="lista-carrinho"></ul>
+
+  <p id="total-carrinho">Total: R$ 0,00</p>
+
+  <button id="limpar-carrinho">Limpar carrinho</button>
+</div>
+
+  <nav>
+    <a href="#services">Serviços</a>
+    <a href="#shop">Produto</a>
+    <a href="#contact">Contato</a>
+  </nav>
+  
+  <div id="mensagem-add"></div>
+
+<section id="shop" class="container">
+  <h2>Produtos em Destaque</h2>
+
+  <div class="produtos-container">
+
+    <!-- PRODUTO 1 -->
+    <div class="produto">
+      <img src="https://img.lojasrenner.com.br/item/929760711/original/1.jpg">
+      <div class="produto-info">
+        <h3>Lip Love - Franciny</h3>
+        <p>R$ 129,90</p>
+        <button class="add-to-cart">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+
+    <!-- PRODUTO 2 -->
+    <div class="produto">
+      <img src="https://www.havan.com.br/media/catalog/product/cache/73a52df140c4d19dbec2b6c485ea6a50/b/a/base-e-corretivo-mari-maria-makeup-matte-velvet-skin-bege-medio_1041493.webp">
+      <div class="produto-info">
+        <h3>Base líquida - Mari Maria</h3>
+        <p>R$ 69,99</p>
+        <button class="add-to-cart">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+
+    <!-- PRODUTO 3 -->
+    <div class="produto">
+      <img src="https://drogariaiguatemi.com.br/pub/media/catalog/product/cache/024743edc39c5ce60fa1b6885a672b62/m/a/mascara_de_cilios_turbo3.png">
+      <div class="produto-info">
+        <h3>Rímel - Eudora</h3>
+        <p>R$ 68,00</p>
+        <button class="add-to-cart">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+
+    <!-- PRODUTO 4 -->
+    <div class="produto">
+      <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTAqkn8HXmZT8a-6gnP4cl_dU5X34tTGtFTQ6vGRDMbz-qj1dqZnX6AJ--tzrSDFeQ_q7D3zmPo1N-r2YHeRUDYjyugxGA20hYD5JgTDBx8sIIFpmvW20PImQ">
+      <div class="produto-info">
+        <h3>Pó solto rosa - Karen Bachini</h3>
+        <p>R$ 67,50</p>
+        <button class="add-to-cart">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+
+    <!-- PRODUTO 5 -->
+    <div class="produto">
+      <img src="https://cdn.dooca.store/108096/products/wadai0wvwfvdrb901gg342mq5pudydaorbre_1080x1080.jpg">
+      <div class="produto-info">
+        <h3>Iluminador - Rare Beauty</h3>
+        <p>R$ 199,00</p>
+        <button class="add-to-cart">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+
+    <!-- PRODUTO 6 -->
+    <div class="produto">
+      <img src="https://nars.vtexassets.com/arquivos/ids/158242-1200-1200">
+      <div class="produto-info">
+        <h3>Blush - Nars</h3>
+        <p>R$ 289,00</p>
+        <button class="add-to-cart">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+
+    <!-- PRODUTO 7 -->
+    <div class="produto">
+      <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSIFm8UcrHf3BeDM0HIglDVbi7kL1r0p8qiG4RyjZXVDmeM5k3iK-4V9yjM0QitqQ2lUfK0-Oprl7-XJqfHucXLqbjHCqeGzvuG1_XQ2vu1_6GUowa8OKwlwF5Q">
+      <div class="produto-info">
+        <h3>Contorno - Océane</h3>
+        <p>R$ 59,90</p>
+        <button class="add-to-cart">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+
+    <!-- PRODUTO 8 -->
+    <div class="produto">
+      <img src="https://m.magazineluiza.com.br/a-static/420x420/corretivo-nars-radiant-creamy-vanilla-62-ml-para-mulheres/nocnocasiacbt/buybox-cpb00bm1wkt0/34e17f23070efc8ac6c41f6d94f3c887.jpeg">
+      <div class="produto-info">
+        <h3>Corretivo - Nars</h3>
+        <p>R$ 149,00</p>
+        <button class="add-to-cart">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+
+    <!-- PRODUTO 9 -->
+    <div class="produto">
+      <img src="https://http2.mlstatic.com/D_NQ_NP_2X_782054-MLB89654575679_082025-F-kit-pinceis-de-maquiagem-e-estojo-organizador-niina-secrets.webp">
+      <div class="produto-info">
+        <h3>Kit de pincéis - Eudora</h3>
+        <p>R$ 189,90</p>
+        <button class="add-to-cart">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+
+    <!-- PRODUTO 10 -->
+    <div class="produto">
+      <img src="https://m.media-amazon.com/images/I/61+hARmq67L._SL1500_.jpg">
+      <div class="produto-info">
+        <h3>Fixador - MAC</h3>
+        <p>R$ 139,00</p>
+        <button class="add-to-cart">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+
+    <!-- PRODUTO 11 -->
+    <div class="produto">
+      <img src="https://m.media-amazon.com/images/I/515a2X9gLxL._AC_SY450_.jpg">
+      <div class="produto-info">
+        <h3>Batom - Océane</h3>
+        <p>R$ 54,90</p>
+        <button class="add-to-cart">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+
+    <!-- PRODUTO 12 -->
+    <div class="produto">
+      <img src="https://m.media-amazon.com/images/I/511jPCVXFxL._AC_SY450_.jpg">
+      <div class="produto-info">
+        <h3>Paleta de sombra - Océane</h3>
+        <p>R$ 68,90</p>
+        <button class="add-to-cart">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="mensagem-carrinho"></div>
+</section>
+
+
+  <section id="services" class="container">
+    <h2>Serviços</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <i class="fas fa-heart"></i>
+        <h3>Maquiagem para Noivas</h3>
+        <p>Transforme o seu grande dia com uma maquiagem profissional e personalizada.</p>
+        <a href="noivas.html">Clique aqui!</a>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-star"></i>
+        <h3>Maquiagem para Eventos</h3>
+        <p>Beleza impecável para festas, formaturas, ensaios e ocasiões especiais.</p>
+        <a href="eventos.html">Clique aqui!</a>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-user-tie"></i>
+        <h3>Consultoria de Imagem</h3>
+        <p>Ajudamos você a encontrar o estilo que mais combina com sua personalidade.</p>
+        <a href="consultoria.html">Clique aqui!</a>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-graduation-cap"></i>
+        <h3>Curso de Automaquiagem</h3>
+        <p>Aprenda técnicas profissionais para se maquiar no dia a dia ou em eventos.</p>
+        <a href="automaquiagem.html">Clique aqui!</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="recomendacao" class="container">
+  <h2>Descubra sua Make Ideal</h2>
+<form id="formMake">
+  <label>
+    Tipo de pele:
+    <select id="pele">
+      <option value="">Selecione</option>
+      <option value="oleosa">Oleosa</option>
+      <option value="seca">Seca</option>
+      <option value="mista">Mista</option>
+    </select>
+  </label>
+
+  <label>
+    Ocasião:
+    <select id="ocasiao">
+      <option value="">Selecione</option>
+      <option value="dia">Dia a dia</option>
+      <option value="noite">Noite</option>
+      <option value="festa">Festa</option>
+    </select>
+  </label>
+
+  <button type="submit">Ver recomendação</button>
+</form>
+
+<div id="resultado-make"></div>
+</section>
+
+  <section id="contact" class="container">
+    <h2>Entre em Contato</h2>
+
+    <form class="contact-form">
+      <input type="text" placeholder="Seu nome" required />
+      <input type="email" placeholder="Seu e-mail" required />
+      <textarea placeholder="Sua mensagem" rows="5" required></textarea>
+      <button type="submit">Enviar Mensagem</button>
+    </form>
+
+    <div class="social-links">
+      <a href="https://wa.me/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="mailto:email@exemplo.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.tiktok.com/" target="_blank"><i class="fab fa-tiktok"></i></a>
+    </div>
+  </section>
+
+  <footer>&copy; Make Beauty - Projeto escolar</footer>
+
+ <script src="js/carrinho.js" defer></script>
+
+</body>
+</html>
+
